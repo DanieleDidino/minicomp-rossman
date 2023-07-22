@@ -2,3 +2,4 @@
 .venv/
 01_EDA_template.ipynb
 2.0_basic_model _template.ipynb
+models/
