@@ -13,9 +13,9 @@ This is a Kaggle competition and can be found [here](https://www.kaggle.com/comp
 
 3 - ```pip install -r requirements.txt```
 
-4 - Run the `4._random_forest.ipynb` Notebook to fit the model
+4 - Run the `minicomp.ipynb` Notebook to fit the model
 
-5 - Run the `make_pred_2.ipynb` Notebook to make predictions
+5 - Run the `make_pred.ipynb` Notebook to make predictions
 
 
 
@@ -24,13 +24,10 @@ This is a Kaggle competition and can be found [here](https://www.kaggle.com/comp
 
 In the model we selected the following features:
 
-- `SchoolHoliday`: binary variable
-- `StoreType`: One-Hot encoding
-- `Assortment`: One-Hot encoding
-- `Promo2`: Mean impute + standard scaler
-- `Date`: extract `Month` and then Mean encoding + mean impute + standard scaler [new var: `Month_mean`]
-- `Store`: Mean encoding + mean impute + standard scaler [new var: `Store_mean`]
-- `DayOfWeek`: Mean encoding + mean impute + standard scaler [new var: `DayOfWeek_mean`]
-- `Promo`: Mean encoding (including `Store`) + mean impute + standard scaler [new var: `PromoStore_mean`]
-- `CompetitionDistance`: Clip (upper=10000) + bins (10) [new variable: `CD_clip_bins_clip`]
-
+- `Promo`: Mean encoding (including `Store`) [new var: `PromoStoreMean`]
+- `DayofWeek`: Mean encoding
+- `Date`: extract `Month` and then Mean encoding [new var: `MonthMean`]
+- `Storetype`: Mean encoding
+- `StateHoliday`: Mean encoding
+- `SchoolHoliday`: Mean encoding
+- `Promo2`: Mean encoding
